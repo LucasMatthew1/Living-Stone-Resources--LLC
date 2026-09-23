@@ -6,15 +6,19 @@ import { ArrowRight } from "@phosphor-icons/react";
 export function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex items-center pt-20 overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Video with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/assets/hero-bg.jpg"
-          alt="Modern Architecture"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-background/70 backdrop-blur-[1px]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover opacity-60 grayscale brightness-75"
+        >
+          <source src="/assets/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
       </div>
 
       <Container className="relative z-10">

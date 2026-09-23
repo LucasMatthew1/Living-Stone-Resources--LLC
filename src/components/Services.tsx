@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Container } from "./layout/Container";
 import { Section } from "./layout/Section";
 import { Button } from "./ui/button";
-import { ArrowRight } from "@phosphor-icons/react";
+import { ArrowRight, Briefcase, Calculator, TShirt, Sparkle } from "@phosphor-icons/react";
 
 const services = [
   {
@@ -12,6 +12,7 @@ const services = [
     description: "Provide strategic guidance and practical consulting resources designed around business needs.",
     cta: "Explore Business Consulting",
     image: "/assets/business.jpg",
+    icon: <Briefcase size={24} />,
   },
   {
     id: "bookkeeping",
@@ -20,6 +21,7 @@ const services = [
     description: "Provide dependable bookkeeping support designed to help businesses maintain better financial organization.",
     cta: "Explore Bookkeeping",
     image: "/assets/bookkeeping.jpg",
+    icon: <Calculator size={24} />,
   },
   {
     id: "clothing",
@@ -28,6 +30,7 @@ const services = [
     description: "Showcase unique woven clothing with an emphasis on individuality, craftsmanship, and distinctive style.",
     cta: "Explore Clothing",
     image: "/assets/woven-1.jpg",
+    icon: <TShirt size={24} />,
   },
   {
     id: "beauty",
@@ -36,6 +39,7 @@ const services = [
     description: "Present beauty consultancy as a personalized service focused on helping clients make informed choices about their appearance and presentation.",
     cta: "Explore Beauty Consulting",
     image: "/assets/beauty.jpg",
+    icon: <Sparkle size={24} />,
   },
 ];
 
@@ -60,31 +64,39 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
-              className="group bg-background overflow-hidden flex flex-col"
+              className="group relative flex flex-col h-full bg-background border border-border overflow-hidden hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
             >
-              <div className="relative aspect-[16/9] overflow-hidden">
+              {/* Image Overlay on Hover */}
+              <div className="relative h-64 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                 />
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500" />
+                <div className="absolute top-6 left-6 w-12 h-12 bg-background flex items-center justify-center text-accent shadow-lg group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                  {service.icon}
+                </div>
               </div>
-            <div className="p-10 flex flex-col flex-grow">
+
+              <div className="p-10 flex flex-col flex-grow">
                 <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] mb-4">
                   {service.title}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-display font-bold mb-4 leading-tight">
+                <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 group-hover:text-accent transition-colors">
                   {service.subtitle}
                 </h3>
                 <p className="text-foreground mb-8 leading-relaxed">
                   {service.description}
                 </p>
                 <div className="mt-auto">
-                  <Button variant="link" className="p-0 h-auto text-foreground font-sans font-bold uppercase tracking-widest text-xs group/btn">
+                  <a
+                    href={`#${service.id}`}
+                    className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:text-accent transition-colors group/link"
+                  >
                     {service.cta}
-                    <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
+                    <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                  </a>
                 </div>
               </div>
             </motion.div>

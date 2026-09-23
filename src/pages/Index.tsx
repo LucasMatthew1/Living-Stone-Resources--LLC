@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Introduction } from "@/components/Introduction";
+import { BrandStory } from "@/components/BrandStory";
 import { Services } from "@/components/Services";
 import { BrandStatement } from "@/components/BrandStatement";
 import { ConsultancyFeature, BookkeepingFeature } from "@/components/FeatureSections";
@@ -15,6 +16,7 @@ export default function Index() {
       <main>
         <Hero />
         <Introduction />
+        <BrandStory />
         <Services />
         <BrandStatement />
         <ConsultancyFeature />

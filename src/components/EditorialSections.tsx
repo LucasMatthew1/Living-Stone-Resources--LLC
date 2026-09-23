@@ -53,7 +53,7 @@ export function ClothingFeature() {
       >
         {/* Intro Slide */}
         <div className="flex-shrink-0 w-full md:w-[60vw] lg:w-[40vw] max-w-[calc(100vw-3rem)]">
-          <span className="text-background/50 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
+          <span className="text-background/80 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
             Unique Woven Clothing
           </span>
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold mb-12 leading-[0.9]">
@@ -87,7 +87,7 @@ export function ClothingFeature() {
         </div>
 
         <div className="flex-shrink-0 w-full md:w-[60vw] md:pr-[10vw]">
-          <blockquote className="text-3xl md:text-4xl lg:text-5xl font-display italic leading-tight text-background/80">
+          <blockquote className="text-3xl md:text-4xl lg:text-5xl font-display italic leading-tight text-background">
             "Clothing created for people who appreciate individuality and craftsmanship."
           </blockquote>
         </div>
