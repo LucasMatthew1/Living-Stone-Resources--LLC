@@ -1,0 +1,56 @@
+# .gortex.yaml — gortex code-intelligence config for Webura-generated apps.
+#
+# gortex indexes this app into a local in-process graph (no network egress,
+# telemetry off) and enforces the rules below on every build via change_contract
+# (pre-write gate) and review (end-of-turn).
+#
+# HOW THE LEARNING LOOP USES THIS FILE
+# ------------------------------------
+# The Webura positive-reinforcement learning loop (Phase C) mines recurring
+# MECHANISM defects across users — typecheck/build failures, gortex refusals,
+# and layout defects like overflow/overlap/broken-media/unfired-reveal — and,
+# for high-confidence clusters, AUTO-WRITES advise-only rules here at severity
+# `warn` or `info`. Advise-only rules ANNOTATE (they surface in change_contract
+# and review) but NEVER block a build.
+#
+# An admin reviews the mechanism digest and PROMOTES a rule to blocking by
+# escalating its severity to `error` (human-gated — the loop never writes
+# `error` on its own). Aesthetic preferences (palette, typography, spacing) are
+# NEVER globalized here; they stay per-user.
+#
+# Auto-written rules carry an `id` of the form `learning_<clusterKey>` so the
+# loop can find and update them idempotently. Edit or delete them freely; the
+# loop dedupes on that id and will not re-add one you removed within the same
+# cluster window.
+
+# What to index. Keep excludes broad — indexing generated/build output is noise.
+index:
+  languages:
+    - ts
+    - tsx
+    - js
+    - jsx
+  exclude:
+    - node_modules
+    - dist
+    - build
+    - .next
+    - out
+    - coverage
+    - .turbo
+    - "*.min.js"
+
+# Co-change / boundary guards. Each entry is a rule; severity `error` blocks,
+# `warn`/`info` advise. The learning loop appends advise-only guard rules here.
+guards:
+  rules: []
+
+# Architecture layers (fan-out / boundary constraints). The learning loop may
+# append advise-only layer rules here for recurring boundary-violation clusters.
+architecture:
+  layers: {}
+
+# rule_files: TOML tree-sitter AST detectors. Each entry carries an inline
+# `detector` (TOML) the learning loop synthesized for a recurring defect class.
+# Advise-only until an admin promotes it.
+rule_files: []

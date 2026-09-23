@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Neutral starting palette — intentionally uncommitted. Retune every token
+       here to suit the brief (warm, cool, dark, high-contrast, playful...) rather
+       than hardcoding hex values in components. */
+    --background: 40 33% 98%; /* #FAF9F6 */
+    --foreground: 0 0% 18%; /* #2D2D2D */
+
+    --card: 40 33% 98%;
+    --card-foreground: 0 0% 18%;
+
+    --popover: 40 33% 98%;
+    --popover-foreground: 0 0% 18%;
+
+    --primary: 0 0% 18%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 40 30% 25%; /* Even darker for safe contrast */
+    --secondary-foreground: 40 33% 98%;
+
+    --muted: 40 10% 94%;
+    --muted-foreground: 0 0% 30%;
+
+    --accent: 40 30% 25%;
+    --accent-foreground: 40 33% 98%;
+
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 40 26% 43%;
+
+    --radius: 0px;
+
+    --font-display: "Cormorant Garamond", serif;
+    --font-sans: "Inter", sans-serif;
+
+    --sidebar-background: 40 30% 96%;
+    --sidebar-foreground: 24 8% 26%;
+    --sidebar-primary: 20 14% 13%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 36 22% 92%;
+    --sidebar-accent-foreground: 20 14% 13%;
+    --sidebar-border: 34 18% 87%;
+    --sidebar-ring: 24 30% 45%;
+  }
+
+  .dark {
+    /* Neutral dark counterpart — retune alongside the light tokens above. */
+    --background: 240 10% 6%;
+    --foreground: 0 0% 95%;
+
+    --card: 240 8% 9%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 240 8% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 240 10% 9%;
+
+    --secondary: 240 5% 16%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 240 5% 16%;
+    --muted-foreground: 240 5% 62%;
+
+    --accent: 240 5% 20%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 240 5% 18%;
+    --input: 240 5% 18%;
+    --ring: 240 5% 60%;
+
+    --sidebar-background: 240 8% 9%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 95%;
+    --sidebar-primary-foreground: 240 10% 9%;
+    --sidebar-accent: 240 5% 16%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 5% 18%;
+    --sidebar-ring: 240 5% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Headings use the display role. Until --font-display is set to a real face
+     this is the same stack as the body, i.e. no hierarchy — which is the signal
+     that a type pair still needs choosing. */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
+
+/* webura:design-tokens start — managed by design_token_apply; edit the values, keep the markers */
+:root {
+  --brand-primary: #2D2D2D;
+  --brand-accent: #8C7851;
+  --brand-radius-lg: 0px;
+  --brand-shadow-card: 0 10px 30px rgb(0 0 0 / 0.08);
+  --brand-space-section-y: 6rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-shadow-card: 0 10px 40px rgb(0 0 0 / 0.45);
+  }
+}
+/* webura:design-tokens end */
