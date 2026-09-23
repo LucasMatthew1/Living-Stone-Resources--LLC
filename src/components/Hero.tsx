@@ -13,12 +13,12 @@ export function Hero() {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover opacity-60 grayscale brightness-75"
+          className="w-full h-full object-cover opacity-80 grayscale brightness-90"
         >
           <source src="/assets/hero-office.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-background/40 backdrop-blur-[0.5px]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-background/20 to-transparent" />
       </div>
 
       <Container className="relative z-10">
