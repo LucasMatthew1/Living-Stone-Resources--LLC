@@ -5,7 +5,7 @@ import { Section } from "./layout/Section";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Label } from "./ui/label";
+import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { ArrowRight, CheckCircle, Calendar, Clock, User, Envelope, Phone, CaretDown } from "@phosphor-icons/react";
 import { cn } from "@/lib/utils";
@@ -38,7 +38,7 @@ export function ContactCTA() {
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground h-14 px-10 text-sm uppercase tracking-widest">
               Book a Consultation
             </Button>
-            <Button variant="outline" size="lg" className="border-white/40 text-white hover:bg-white/10 h-14 px-10 text-sm uppercase tracking-widest">
+            <Button variant="outline" size="lg" className="border-white/80 text-white hover:bg-white/10 h-14 px-10 text-sm uppercase tracking-widest">
               Contact Us
             </Button>
           </div>
@@ -304,12 +304,12 @@ export function Footer() {
             </span>
           </div>
           
-          <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground/90">
+          <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground">
             <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
           </div>
 
-          <p className="text-sm font-sans tracking-widest uppercase text-foreground/60">
+          <p className="text-sm font-sans tracking-widest uppercase text-foreground/80">
             © {new Date().getFullYear()} Living Stone Resources, LLC. All rights reserved.
           </p>
         </div>

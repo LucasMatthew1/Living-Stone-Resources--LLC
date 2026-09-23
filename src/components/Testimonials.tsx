@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Container } from "./layout/Container";
 import { Section } from "./layout/Section";
 import { Quotes } from "@phosphor-icons/react";
+import { cn } from "@/lib/utils";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -36,6 +37,8 @@ const logos = [
 ];
 
 export function Testimonials() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <Section id="testimonials" className="bg-muted/30 overflow-hidden">
       <Container>
@@ -68,7 +71,7 @@ export function Testimonials() {
                     <p className="font-sans font-bold uppercase tracking-widest text-sm">
                       {t.author}
                     </p>
-                    <p className="font-sans text-xs text-foreground/50 uppercase tracking-widest">
+                    <p className="font-sans text-xs text-foreground/70 uppercase tracking-widest">
                       {t.role}
                     </p>
                   </div>
@@ -80,15 +83,20 @@ export function Testimonials() {
 
         {/* Logo Ticker */}
         <div className="relative">
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background/50 to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background/50 to-transparent z-10" />
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-muted/30 to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-muted/30 to-transparent z-10" />
           
           <div className="flex overflow-hidden group">
-            <div className="flex animate-marquee whitespace-nowrap py-4 gap-20 items-center">
+            <div 
+              className={cn(
+                "flex whitespace-nowrap py-4 gap-20 items-center",
+                !shouldReduceMotion && "animate-marquee"
+              )}
+            >
               {[...logos, ...logos].map((logo, i) => (
                 <span 
                   key={i} 
-                  className="text-3xl md:text-5xl font-display font-bold text-foreground/10 uppercase tracking-[0.2em] select-none hover:text-accent/20 transition-colors"
+                  className="text-3xl md:text-5xl font-display font-bold text-foreground/50 uppercase tracking-[0.2em] select-none hover:text-accent/70 transition-colors"
                 >
                   {logo}
                 </span>

@@ -15,7 +15,7 @@ export function Hero() {
           playsInline
           className="w-full h-full object-cover opacity-60 grayscale brightness-75"
         >
-          <source src="/assets/hero-video-refined.mp4" type="video/mp4" />
+          <source src="/assets/hero-office.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />

@@ -4,6 +4,7 @@ import { Container } from "./layout/Container";
 import { Section } from "./layout/Section";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { EnvelopeSimple, ArrowRight } from "@phosphor-icons/react";
 
@@ -27,6 +28,8 @@ export function Newsletter() {
       />
       
       <Container className="relative z-10">
+        {/* Scrim for readability */}
+        <div className="absolute inset-0 bg-primary/20 pointer-events-none -z-10" />
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -70,7 +73,7 @@ export function Newsletter() {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
-            <p className="text-xs uppercase tracking-[0.2em] text-primary-foreground/60 mt-4">
+            <p className="text-xs uppercase tracking-[0.2em] text-primary-foreground/80 mt-4">
               By subscribing, you agree to our privacy policy.
             </p>
           </motion.div>
