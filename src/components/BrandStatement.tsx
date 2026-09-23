@@ -48,7 +48,7 @@ export function BrandStatement() {
   }, [reduceMotion]);
 
   return (
-    <Section ref={containerRef} className="relative overflow-hidden bg-primary text-primary-foreground py-32 md:py-48 lg:py-64">
+    <Section ref={containerRef} id="brand-statement" className="relative overflow-hidden bg-primary text-primary-foreground py-32 md:py-48 lg:py-64">
       {/* Background Texture */}
       <div 
         className="absolute inset-0 opacity-[0.05] pointer-events-none"

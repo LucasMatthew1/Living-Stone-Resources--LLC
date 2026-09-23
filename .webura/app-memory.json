@@ -8,7 +8,11 @@
     {
       "at": 1790194493966,
       "title": "Added hero video and services grid"
+    },
+    {
+      "at": 1790195558301,
+      "title": "Integrated testimonials carousel and newsletter"
     }
   ],
-  "updatedAt": 1790194493966
+  "updatedAt": 1790195558301
 }

@@ -86,7 +86,7 @@ export function ContactSection() {
               Schedule a personalized session to explore how our resources can support your growth.
             </p>
             
-            <div className="space-y-8 text-foreground">
+            <div className="space-y-6 text-foreground">
               <div className="flex gap-4">
                 <div className="w-10 h-10 bg-muted flex items-center justify-center flex-shrink-0">
                   <User weight="thin" className="w-5 h-5 text-accent" />
