@@ -35,11 +35,11 @@ export function ContactCTA() {
             Whether you're building a business, organizing your books, expressing your style, or exploring beauty solutions, Living Stone Resources is here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground h-14 px-10 text-sm uppercase tracking-widest">
-              Book a Consultation
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
+              <a href="/contact">Book a Session</a>
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 h-14 px-10 text-sm uppercase tracking-widest">
-              Contact Us
+            <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/5 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
+              <a href="/contact">Get in Touch</a>
             </Button>
           </div>
         </motion.div>
@@ -292,23 +292,15 @@ export function ContactSection() {
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border py-16">
+    <footer className="bg-background border-t border-border py-20">
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-          <a href="/" className="flex items-center gap-4 group">
+          <a href="/" className="flex items-center group">
             <img 
-              src="/assets/pasted-image-2026-09-24T19-34-32-107Z-7fb14171ea5e.png" 
-              alt="Living Stone Resources Logo" 
-              className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
+              src="/assets/logo-clean.png" 
+              alt="Living Stone Resources" 
+              className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
             />
-            <div className="flex flex-col items-start">
-              <span className="text-xl font-display font-bold tracking-tight uppercase leading-none">
-                Living Stone
-              </span>
-              <span className="text-[12px] font-sans tracking-[0.2em] uppercase text-accent leading-none mt-1">
-                Resources, LLC
-              </span>
-            </div>
           </a>
           
           <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground">

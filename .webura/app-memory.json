@@ -24,7 +24,11 @@
     {
       "at": 1790278580803,
       "title": "Added logo to header, footer"
+    },
+    {
+      "at": 1790279120001,
+      "title": "Added About and Contact pages"
     }
   ],
-  "updatedAt": 1790278580803
+  "updatedAt": 1790279120001
 }

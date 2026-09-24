@@ -41,12 +41,14 @@ export function Hero() {
               Living Stone Resources, LLC provides practical business guidance, dependable bookkeeping, unique woven clothing, and beauty consultancy—all designed to help you build with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-primary text-primary-foreground h-14 px-8 text-sm uppercase tracking-widest group">
-                Explore Our Services
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-10 text-sm uppercase tracking-widest font-bold group" asChild>
+                <a href="/contact">
+                  Start Building
+                  <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="h-14 px-8 text-sm uppercase tracking-widest border-primary/20 hover:bg-primary/5">
-                Get Started
+              <Button variant="outline" size="lg" className="h-14 px-10 text-sm uppercase tracking-widest border-primary/20 hover:bg-primary/5" asChild>
+                <a href="/about">Meet the Team</a>
               </Button>
             </div>
           </motion.div>

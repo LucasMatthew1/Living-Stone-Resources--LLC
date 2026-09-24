@@ -108,7 +108,8 @@
      that a type pair still needs choosing. */
   h1,
   h2,
-  h3 {
+  h3,
+  .font-display {
     font-family: var(--font-display);
   }
 }

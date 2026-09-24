@@ -6,12 +6,11 @@ import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Story", href: "#story" },
-  { name: "Services", href: "#services" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Clothing", href: "#clothing" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/#services" },
+  { name: "Testimonials", href: "/#testimonials" },
+  { name: "Clothing", href: "/#clothing" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
@@ -34,35 +33,27 @@ export function Header() {
       )}
     >
       <Container className="flex items-center justify-between">
-        <a href="/" className="flex items-center gap-4 group">
+        <a href="/" className="flex items-center group">
           <img 
-            src="/assets/pasted-image-2026-09-24T19-34-32-107Z-7fb14171ea5e.png" 
-            alt="Living Stone Resources Logo" 
-            className="h-10 md:h-12 w-auto object-contain"
+            src="/assets/logo-clean.png" 
+            alt="Living Stone Resources" 
+            className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
           />
-          <div className="flex flex-col items-start">
-            <span className="text-lg md:text-xl font-display font-bold tracking-tight uppercase leading-none">
-              Living Stone
-            </span>
-            <span className="text-[12px] md:text-[14px] font-sans tracking-[0.2em] uppercase text-accent leading-none mt-1">
-              Resources, LLC
-            </span>
-          </div>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium hover:text-accent transition-colors uppercase tracking-wider"
+              className="text-xs font-sans font-bold hover:text-accent transition-colors uppercase tracking-[0.2em]"
             >
               {link.name}
             </a>
           ))}
-          <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground uppercase tracking-widest text-xs px-6 h-10">
-            Get Started
+          <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase tracking-widest text-[10px] px-6 h-10 font-bold">
+            Consult Now
           </Button>
         </nav>
 
@@ -95,8 +86,8 @@ export function Header() {
                   {link.name}
                 </a>
               ))}
-              <Button className="w-full mt-4 bg-primary text-primary-foreground uppercase tracking-widest">
-                Get Started
+              <Button className="w-full mt-4 bg-accent text-accent-foreground uppercase tracking-widest font-bold">
+                Consult Now
               </Button>
             </nav>
           </motion.div>
