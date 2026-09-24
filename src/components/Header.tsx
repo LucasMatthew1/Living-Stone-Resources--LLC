@@ -34,13 +34,20 @@ export function Header() {
       )}
     >
       <Container className="flex items-center justify-between">
-        <a href="/" className="flex flex-col items-start">
-          <span className="text-xl md:text-2xl font-display font-bold tracking-tight uppercase">
-            Living Stone
-          </span>
-          <span className="text-[12px] font-sans tracking-[0.2em] uppercase text-accent leading-none -mt-1">
-            Resources, LLC
-          </span>
+        <a href="/" className="flex items-center gap-4 group">
+          <img 
+            src="/assets/pasted-image-2026-09-24T19-34-32-107Z-7fb14171ea5e.png" 
+            alt="Living Stone Resources Logo" 
+            className="h-10 md:h-12 w-auto object-contain"
+          />
+          <div className="flex flex-col items-start">
+            <span className="text-lg md:text-xl font-display font-bold tracking-tight uppercase leading-none">
+              Living Stone
+            </span>
+            <span className="text-[12px] md:text-[14px] font-sans tracking-[0.2em] uppercase text-accent leading-none mt-1">
+              Resources, LLC
+            </span>
+          </div>
         </a>
 
         {/* Desktop Nav */}

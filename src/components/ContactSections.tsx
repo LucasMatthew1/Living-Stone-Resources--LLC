@@ -38,7 +38,7 @@ export function ContactCTA() {
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground h-14 px-10 text-sm uppercase tracking-widest">
               Book a Consultation
             </Button>
-            <Button variant="outline" size="lg" className="border-white/80 text-white hover:bg-white/10 h-14 px-10 text-sm uppercase tracking-widest">
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 h-14 px-10 text-sm uppercase tracking-widest">
               Contact Us
             </Button>
           </div>
@@ -292,17 +292,24 @@ export function ContactSection() {
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t border-border py-12">
+    <footer className="bg-background border-t border-border py-16">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="flex flex-col items-center md:items-start">
-            <span className="text-2xl font-display font-bold tracking-tight uppercase">
-              Living Stone
-            </span>
-            <span className="text-[12px] font-sans tracking-[0.2em] uppercase text-accent leading-none -mt-1">
-              Resources, LLC
-            </span>
-          </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+          <a href="/" className="flex items-center gap-4 group">
+            <img 
+              src="/assets/pasted-image-2026-09-24T19-34-32-107Z-7fb14171ea5e.png" 
+              alt="Living Stone Resources Logo" 
+              className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
+            />
+            <div className="flex flex-col items-start">
+              <span className="text-xl font-display font-bold tracking-tight uppercase leading-none">
+                Living Stone
+              </span>
+              <span className="text-[12px] font-sans tracking-[0.2em] uppercase text-accent leading-none mt-1">
+                Resources, LLC
+              </span>
+            </div>
+          </a>
           
           <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground">
             <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
