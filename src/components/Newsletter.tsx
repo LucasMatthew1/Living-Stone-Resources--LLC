@@ -65,7 +65,7 @@ export function Newsletter() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="pl-12 h-14 bg-white/5 border-white/40 text-white placeholder:text-white/40 rounded-none focus:border-secondary transition-colors"
+                  className="pl-12 h-14 bg-white/10 border-white/60 text-white placeholder:text-white/60 rounded-none focus:border-white transition-colors"
                 />
               </div>
               <Button type="submit" className="h-14 px-8 bg-secondary hover:bg-secondary/90 text-secondary-foreground uppercase tracking-widest text-xs font-bold transition-all group">

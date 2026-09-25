@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { List, X } from "@phosphor-icons/react";
 import { Container } from "./layout/Container";
 import { Button } from "./ui/button";
@@ -7,23 +7,21 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "About", href: "/about" },
-  { name: "Services", href: "/#services" },
-  { name: "Testimonials", href: "/#testimonials" },
-  { name: "Clothing", href: "/#clothing" },
+  { name: "Consultancy", href: "/business-consultancy" },
+  { name: "Bookkeeping", href: "/bookkeeping" },
+  { name: "Clothing", href: "/clothing" },
+  { name: "Beauty", href: "/beauty" },
   { name: "Contact", href: "/contact" },
 ];
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setScrolled(latest > 50);
+  });
 
   return (
     <header
@@ -52,8 +50,8 @@ export function Header() {
               {link.name}
             </a>
           ))}
-          <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground uppercase tracking-widest text-xs px-6 h-10 font-bold">
-            Consult Now
+          <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground uppercase tracking-widest text-xs px-6 h-10 font-bold" asChild>
+            <a href="/contact">Consult Now</a>
           </Button>
         </nav>
 
@@ -86,8 +84,8 @@ export function Header() {
                   {link.name}
                 </a>
               ))}
-              <Button className="w-full mt-4 bg-primary text-primary-foreground uppercase tracking-widest font-bold">
-                Consult Now
+              <Button className="w-full mt-4 bg-primary text-primary-foreground uppercase tracking-widest font-bold" asChild>
+                <a href="/contact" onClick={() => setIsOpen(false)}>Consult Now</a>
               </Button>
             </nav>
           </motion.div>

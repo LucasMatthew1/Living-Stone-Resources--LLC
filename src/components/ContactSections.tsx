@@ -335,6 +335,16 @@ export function Footer() {
           </div>
 
           <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">Services</h4>
+            <div className="space-y-4 text-sm font-bold uppercase tracking-widest text-xs">
+              <a href="/business-consultancy" className="block text-foreground/60 hover:text-primary transition-colors">Business Consultancy</a>
+              <a href="/bookkeeping" className="block text-foreground/60 hover:text-primary transition-colors">Bookkeeping</a>
+              <a href="/clothing" className="block text-foreground/60 hover:text-primary transition-colors">Woven Clothing</a>
+              <a href="/beauty" className="block text-foreground/60 hover:text-primary transition-colors">Beauty Consultancy</a>
+            </div>
+          </div>
+
+          <div>
             <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">Legal</h4>
             <div className="space-y-4 text-sm">
               <a href="#" className="block text-foreground/60 hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold">Privacy Policy</a>
@@ -344,11 +354,11 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-xs font-sans tracking-[0.2em] uppercase text-foreground/40 font-bold">
+          <p className="text-xs font-sans tracking-[0.2em] uppercase text-foreground/60 font-bold">
             © {new Date().getFullYear()} Living Stone Resources, LLC. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <span className="text-xs font-bold uppercase tracking-widest text-primary/40">Built Up!</span>
+            <span className="text-xs font-bold uppercase tracking-widest text-primary/60">Built Up!</span>
           </div>
         </div>
       </Container>

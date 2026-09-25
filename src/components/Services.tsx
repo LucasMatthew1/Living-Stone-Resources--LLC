@@ -13,6 +13,7 @@ const services = [
     cta: "Explore Business Consulting",
     image: "/assets/business.jpg",
     icon: <Briefcase size={24} />,
+    href: "/business-consultancy",
   },
   {
     id: "bookkeeping",
@@ -22,6 +23,7 @@ const services = [
     cta: "Explore Bookkeeping",
     image: "/assets/bookkeeping.jpg",
     icon: <Calculator size={24} />,
+    href: "/bookkeeping",
   },
   {
     id: "clothing",
@@ -31,6 +33,7 @@ const services = [
     cta: "Explore Clothing",
     image: "/assets/woven-1.jpg",
     icon: <TShirt size={24} />,
+    href: "/clothing",
   },
   {
     id: "beauty",
@@ -40,6 +43,7 @@ const services = [
     cta: "Explore Beauty Consulting",
     image: "/assets/beauty.jpg",
     icon: <Sparkle size={24} />,
+    href: "/beauty",
   },
 ];
 
@@ -91,7 +95,7 @@ export function Services() {
                 </p>
                 <div className="mt-auto">
                   <a
-                    href={`#${service.id}`}
+                    href={service.href}
                     className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity group/link"
                   >
                     {service.cta}

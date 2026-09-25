@@ -38,9 +38,11 @@ export function ConsultancyFeature() {
         <p className="text-lg text-foreground/80 mb-10 leading-relaxed max-w-xl">
           Every business has different challenges. Living Stone Resources provides practical consultancy designed to help you understand where you are, identify opportunities, and move forward with greater clarity.
         </p>
-        <Button size="lg" className="bg-primary text-primary-foreground group">
-          Let's Talk Business
-          <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+        <Button size="lg" className="bg-primary text-primary-foreground group" asChild>
+          <a href="/business-consultancy">
+            Let's Talk Business
+            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+          </a>
         </Button>
       </motion.div>
     </div>
@@ -84,9 +86,11 @@ export function BookkeepingFeature() {
               ))}
             </div>
 
-            <Button size="lg" className="bg-primary text-primary-foreground group">
-              Bookkeeping Services
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <Button size="lg" className="bg-primary text-primary-foreground group" asChild>
+              <a href="/bookkeeping">
+                Bookkeeping Services
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </motion.div>
 

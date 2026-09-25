@@ -68,7 +68,7 @@ export function WhyUs() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="relative"
             >
-              <span className="text-brand-purple/20 text-6xl md:text-7xl lg:text-8xl font-display font-bold absolute -top-12 left-0 md:-left-6 z-0 select-none hidden md:block">
+              <span className="text-brand-purple/50 text-6xl md:text-7xl lg:text-8xl font-display font-bold absolute -top-12 left-0 md:-left-6 z-0 select-none hidden md:block">
                 {point.num}
               </span>
               <div className="relative z-10">

@@ -83,20 +83,23 @@ export function Testimonials() {
 
         {/* Logo Ticker */}
         <div className="relative py-12 border-y border-border/50">
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-secondary/30 to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-secondary/30 to-transparent z-10" />
-          
-          <div className="flex overflow-hidden group px-12">
+          <div 
+            className="flex overflow-hidden group"
+            style={{ 
+              maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+            }}
+          >
             <div 
               className={cn(
-                "flex whitespace-nowrap gap-20 items-center",
+                "flex whitespace-nowrap gap-20 items-center pl-[50px]",
                 !shouldReduceMotion && "animate-marquee"
               )}
             >
               {[...logos, ...logos, ...logos].map((logo, i) => (
                 <span 
                   key={i} 
-                  className="text-3xl md:text-5xl font-display font-bold text-foreground/60 uppercase tracking-[0.2em] select-none hover:text-brand-purple transition-colors"
+                  className="text-3xl md:text-5xl font-display font-bold text-foreground/70 uppercase tracking-[0.2em] select-none hover:text-brand-purple transition-colors"
                 >
                   {logo}
                 </span>

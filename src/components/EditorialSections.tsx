@@ -64,9 +64,11 @@ export function ClothingFeature() {
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-12 leading-relaxed max-w-md">
             Discover unique woven clothing created for people who appreciate individuality, texture, craftsmanship, and style.
           </p>
-          <Button variant="outline" size="lg" className="border-primary-foreground/60 text-primary-foreground hover:bg-primary-foreground/10 group">
-            Explore the Collection
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+          <Button variant="outline" size="lg" className="border-white text-primary-foreground hover:bg-primary-foreground/10 group" asChild>
+            <a href="/clothing">
+              Explore the Collection
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
 
@@ -135,9 +137,11 @@ export function BeautyFeature() {
             <p className="text-lg text-foreground/80 mb-10 leading-relaxed max-w-xl">
               Beauty is personal. Our consultancy approach focuses on helping you explore choices that complement your individual style, confidence, and presentation.
             </p>
-            <Button size="lg" className="bg-primary text-primary-foreground group">
-              Explore Beauty Consultancy
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <Button size="lg" className="bg-primary text-primary-foreground group" asChild>
+              <a href="/beauty">
+                Explore Beauty Consultancy
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </motion.div>
         </div>
