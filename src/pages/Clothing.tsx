@@ -40,7 +40,7 @@ export default function Clothing() {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground">
-      <Header />
+      <Header variant="light" />
       
       <main>
         {/* Hero Section */}
@@ -52,6 +52,7 @@ export default function Clothing() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
           </div>
 

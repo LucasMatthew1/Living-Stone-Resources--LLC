@@ -14,7 +14,7 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
-export function Header() {
+export function Header({ variant = "dark" }: { variant?: "light" | "dark" }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { scrollY } = useScroll();
@@ -22,6 +22,8 @@ export function Header() {
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrolled(latest > 50);
   });
+
+  const isLight = variant === "light" && !scrolled;
 
   return (
     <header
@@ -35,7 +37,10 @@ export function Header() {
           <img 
             src="/assets/image-removebg-preview-c8898cc857e1.png" 
             alt="Living Stone Resources" 
-            className="h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105"
+            className={cn(
+              "h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105",
+              isLight && "brightness-0 invert"
+            )}
           />
         </a>
 
@@ -45,7 +50,10 @@ export function Header() {
             <a
               key={link.name}
               href={link.href}
-              className="text-xs font-sans font-bold hover:text-primary transition-colors uppercase tracking-[0.2em]"
+              className={cn(
+                "text-xs font-sans font-bold hover:text-primary transition-colors uppercase tracking-[0.2em]",
+                isLight ? "text-white" : "text-foreground"
+              )}
             >
               {link.name}
             </a>
@@ -57,7 +65,10 @@ export function Header() {
 
         {/* Mobile Toggle */}
         <button
-          className="lg:hidden p-2 text-foreground"
+          className={cn(
+            "lg:hidden p-2 transition-colors",
+            isLight ? "text-white" : "text-foreground"
+          )}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <List size={24} />}
