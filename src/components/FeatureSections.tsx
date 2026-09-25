@@ -67,19 +67,19 @@ export function BookkeepingFeature() {
               Know Your Numbers. Build With Confidence.
             </h2>
             <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
-              Good bookkeeping provides the organization businesses need to understand their financial activity and stay on top of their records.
+              Good bookkeeping provides the organization businesses need to understand their financial activity and stay on top of their records for sound decisions. Our services go beyond tracking expenses; we provide the financial clarity required to make informed choices that drive sustainable growth.
             </p>
             
             <div className="grid grid-cols-2 gap-8 mb-12">
               {[
-                "Organized records",
-                "Financial clarity",
-                "Business organization",
-                "Reporting"
+                "Informed Growth Decisions",
+                "Strategic Data Clarity",
+                "Growth-Focused Reporting",
+                "Sound Financial Foundation"
               ].map((item, i) => (
                 <div key={item} className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-brand-purple/40" />
-                  <span className="font-sans font-medium text-foreground/80">{item}</span>
+                  <span className="font-sans font-bold text-foreground/80 text-xs uppercase tracking-[0.2em]">{item}</span>
                 </div>
               ))}
             </div>

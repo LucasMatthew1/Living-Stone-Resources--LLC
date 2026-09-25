@@ -86,14 +86,32 @@ export function ContactSection() {
               Schedule a personalized session to explore how our resources can support your growth.
             </p>
             
-            <div className="space-y-6 text-foreground">
+            <div className="space-y-8 text-foreground">
               <div className="flex gap-4">
                 <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
                   <User weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Expert Guidance</p>
-                  <p className="font-sans text-sm">One-on-one sessions tailored to your needs.</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Rev. Rita Townsend, DBA</p>
+                  <p className="font-sans text-sm">Personalized guidance from a trusted resource.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
+                  <Phone weight="thin" className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Business Telephone</p>
+                  <a href="tel:9083363832" className="font-sans text-sm hover:text-primary transition-colors">(908) 336-3832</a>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
+                  <Envelope weight="thin" className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Business Email</p>
+                  <a href="mailto:rtownsend.lsrllc@gmail.com" className="font-sans text-sm hover:text-primary transition-colors">rtownsend.lsrllc@gmail.com</a>
                 </div>
               </div>
               <div className="flex gap-4">
@@ -101,17 +119,8 @@ export function ContactSection() {
                   <Calendar weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Flexible Scheduling</p>
-                  <p className="font-sans text-sm">Choose a time that works for your schedule.</p>
-                </div>
-              </div>
-              <div className="flex gap-4">
-                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
-                  <CheckCircle weight="thin" className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Clarity & Direction</p>
-                  <p className="font-sans text-sm">Leave with a clear path forward.</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Business Address</p>
+                  <p className="font-sans text-sm">4 South Orange Ave 340, <br />South Orange, NJ 07079</p>
                 </div>
               </div>
             </div>
@@ -294,23 +303,53 @@ export function Footer() {
   return (
     <footer className="bg-background border-t border-border py-20">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
-          <a href="/" className="flex items-center group">
-            <img 
-              src="/assets/image-removebg-preview-c8898cc857e1.png" 
-              alt="Living Stone Resources" 
-              className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
-            />
-          </a>
-          
-          <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground/60">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="lg:col-span-1">
+            <a href="/" className="flex items-center group mb-8">
+              <img 
+                src="/assets/image-removebg-preview-c8898cc857e1.png" 
+                alt="Living Stone Resources" 
+                className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
+              />
+            </a>
+            <p className="text-sm text-foreground/60 leading-relaxed max-w-xs">
+              Building foundations for living well through professional business services and creative resources.
+            </p>
           </div>
 
-          <p className="text-sm font-sans tracking-widest uppercase text-foreground/80">
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">Contact</h4>
+            <div className="space-y-4 text-sm">
+              <p className="text-foreground/80 font-bold">Rev. Rita Townsend, DBA</p>
+              <a href="tel:9083363832" className="block text-foreground/60 hover:text-primary transition-colors">(908) 336-3832</a>
+              <a href="mailto:rtownsend.lsrllc@gmail.com" className="block text-foreground/60 hover:text-primary transition-colors">rtownsend.lsrllc@gmail.com</a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">Location</h4>
+            <address className="not-italic text-sm text-foreground/60 leading-relaxed">
+              4 South Orange Ave 340<br />
+              South Orange, NJ 07079
+            </address>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-6">Legal</h4>
+            <div className="space-y-4 text-sm">
+              <a href="#" className="block text-foreground/60 hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold">Privacy Policy</a>
+              <a href="#" className="block text-foreground/60 hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-xs font-sans tracking-[0.2em] uppercase text-foreground/40 font-bold">
             © {new Date().getFullYear()} Living Stone Resources, LLC. All rights reserved.
           </p>
+          <div className="flex gap-6">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary/40">Built Up!</span>
+          </div>
         </div>
       </Container>
     </footer>

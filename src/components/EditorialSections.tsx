@@ -54,7 +54,7 @@ export function ClothingFeature() {
       >
         {/* Intro Slide */}
         <div className="flex-shrink-0 w-full md:w-[60vw] lg:w-[40vw] max-w-[calc(100vw-3rem)]">
-          <span className="text-primary-foreground/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
+          <span className="text-primary-foreground/90 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
             Unique Woven Clothing
           </span>
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold mb-12 leading-[0.9]">
@@ -64,7 +64,7 @@ export function ClothingFeature() {
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-12 leading-relaxed max-w-md">
             Discover unique woven clothing created for people who appreciate individuality, texture, craftsmanship, and style.
           </p>
-          <Button variant="outline" size="lg" className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 group">
+          <Button variant="outline" size="lg" className="border-primary-foreground/60 text-primary-foreground hover:bg-primary-foreground/10 group">
             Explore the Collection
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
@@ -126,7 +126,7 @@ export function BeautyFeature() {
             transition={{ duration: 1, delay: 0.3 }}
             className="lg:w-1/2"
           >
-            <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Beauty Consultancy
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight text-foreground">

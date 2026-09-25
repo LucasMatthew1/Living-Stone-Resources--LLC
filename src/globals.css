@@ -16,7 +16,7 @@
     --popover: 40 33% 98%;
     --popover-foreground: 240 10% 4%;
 
-    --primary: 120 25% 25%; /* Darkened for better contrast on cream */
+    --primary: 120 25% 20%; /* Darker green for high contrast */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 300 25% 94%; /* Slightly more purply-cream */

@@ -80,11 +80,11 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
                   <div>
                     <span className="text-3xl font-display font-bold block mb-2 text-primary">10+</span>
-                    <span className="text-xs uppercase tracking-widest text-primary/60 font-bold">Years Experience</span>
+                    <span className="text-xs uppercase tracking-widest text-primary font-bold">Years Experience</span>
                   </div>
                   <div>
                     <span className="text-3xl font-display font-bold block mb-2 text-primary">500+</span>
-                    <span className="text-xs uppercase tracking-widest text-primary/60 font-bold">Clients Built Up</span>
+                    <span className="text-xs uppercase tracking-widest text-primary font-bold">Clients Built Up</span>
                   </div>
                 </div>
               </div>
