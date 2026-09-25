@@ -56,7 +56,11 @@
     {
       "at": 1790359792133,
       "title": "Added top-down gradient to heroes"
+    },
+    {
+      "at": 1790360774910,
+      "title": "Improved hero text readability"
     }
   ],
-  "updatedAt": 1790359792133
+  "updatedAt": 1790360774910
 }

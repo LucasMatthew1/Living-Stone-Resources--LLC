@@ -51,8 +51,8 @@ export default function Bookkeeping() {
               alt="Bookkeeping Services" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-[1px]" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent pointer-events-none" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
           </div>
 
@@ -61,7 +61,7 @@ export default function Bookkeeping() {
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="inline-block text-primary-foreground/80 text-xs font-bold uppercase tracking-[0.3em] mb-6"
+                className="inline-block text-white/80 text-xs font-bold uppercase tracking-[0.3em] mb-6"
               >
                 Financial Services
               </motion.span>
@@ -78,7 +78,7 @@ export default function Bookkeeping() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-xl md:text-2xl text-white/70 font-display italic leading-relaxed max-w-2xl"
+                className="text-xl md:text-2xl text-white font-display italic leading-relaxed max-w-2xl"
               >
                 Providing the roadmap for growth through sound financial management. We bring order to your finances so you can focus on building your legacy.
               </motion.p>
