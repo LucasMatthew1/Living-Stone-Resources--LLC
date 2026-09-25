@@ -52,7 +52,7 @@ export function Header() {
               {link.name}
             </a>
           ))}
-          <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase tracking-widest text-[10px] px-6 h-10 font-bold">
+          <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase tracking-widest text-xs px-6 h-10 font-bold">
             Consult Now
           </Button>
         </nav>

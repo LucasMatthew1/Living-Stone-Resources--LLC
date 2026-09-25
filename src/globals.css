@@ -7,33 +7,33 @@
     /* Neutral starting palette — intentionally uncommitted. Retune every token
        here to suit the brief (warm, cool, dark, high-contrast, playful...) rather
        than hardcoding hex values in components. */
-    --background: 120 10% 98%; /* Very faint greenish tint */
-    --foreground: 120 10% 10%; /* Very dark green/black */
+    --background: 240 5% 98%; /* Pure clean background */
+    --foreground: 240 10% 4%; /* Sharp ink black */
 
-    --card: 120 10% 98%;
-    --card-foreground: 120 10% 10%;
+    --card: 240 5% 98%;
+    --card-foreground: 240 10% 4%;
 
-    --popover: 120 10% 98%;
-    --popover-foreground: 120 10% 10%;
+    --popover: 240 5% 98%;
+    --popover-foreground: 240 10% 4%;
 
-    --primary: 120 10% 10%;
-    --primary-foreground: 120 10% 98%;
+    --primary: 240 10% 4%;
+    --primary-foreground: 240 5% 98%;
 
-    --secondary: 120 25% 30%;
-    --secondary-foreground: 120 10% 98%;
+    --secondary: 240 5% 90%;
+    --secondary-foreground: 240 10% 4%;
 
-    --muted: 120 10% 94%;
-    --muted-foreground: 120 10% 40%;
+    --muted: 240 5% 94%;
+    --muted-foreground: 240 5% 40%;
 
-    --accent: 120 25% 40%; /* Darker green for contrast */
-    --accent-foreground: 120 10% 98%;
+    --accent: 240 10% 4%; /* Monochromatic sharp accent */
+    --accent-foreground: 240 5% 98%;
 
-    --destructive: 0 72% 48%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 120 10% 85%;
-    --input: 120 10% 85%;
-    --ring: 120 25% 40%;
+    --border: 240 5% 88%;
+    --input: 240 5% 88%;
+    --ring: 240 10% 4%;
 
     --radius: 0px;
 
@@ -116,11 +116,11 @@
 
 /* webura:design-tokens start — managed by design_token_apply; edit the values, keep the markers */
 :root {
-  --brand-primary: #1a1a1a;
-  --brand-accent: #60a060;
+  --brand-primary: #0a0a0a;
+  --brand-accent: #1a1a1a;
   --brand-radius-lg: 0px;
   --brand-shadow-card: 0 10px 30px rgb(0 0 0 / 0.08);
-  --brand-space-section-y: 4rem;
+  --brand-space-section-y: 6rem;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -24,20 +24,20 @@ export function BrandStatement() {
       gsap.fromTo(
         textRef.current,
         {
-          opacity: 0.1,
-          scale: 0.9,
-          y: 20,
+          opacity: 0.2,
+          scale: 0.95,
+          y: 30,
         },
         {
           opacity: 1,
           scale: 1,
           y: 0,
-          duration: 1,
-          ease: "power3.out",
+          duration: 1.2,
+          ease: "power2.out",
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top 95%",
-            end: "bottom 20%",
+            end: "bottom 10%",
             scrub: 1,
           },
         }

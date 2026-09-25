@@ -19,7 +19,7 @@ export function ContactCTA() {
         style={{ backgroundImage: `url('/assets/stone-texture.jpg')`, backgroundSize: 'cover' }}
       />
       {/* Readability Layer */}
-      <div className="absolute inset-0 bg-primary/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-primary/60 pointer-events-none" />
       
       <Container className="relative z-10 text-center max-w-4xl">
         <motion.div
@@ -31,14 +31,14 @@ export function ContactCTA() {
           <h2 className="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight">
             Ready to Get Built Up?
           </h2>
-          <p className="text-xl md:text-2xl font-display italic text-primary-foreground/70 mb-12 leading-relaxed">
+          <p className="text-xl md:text-2xl font-display italic text-primary-foreground/60 mb-12 leading-relaxed">
             Whether you're building a business, organizing your books, expressing your style, or exploring beauty solutions, Living Stone Resources is here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
+            <Button size="lg" className="bg-background text-foreground hover:bg-background/90 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
               <a href="/contact">Book a Session</a>
             </Button>
-            <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/5 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
+            <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
               <a href="/contact">Get in Touch</a>
             </Button>
           </div>
@@ -303,9 +303,9 @@ export function Footer() {
             />
           </a>
           
-          <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground">
-            <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
+          <div className="flex gap-8 text-sm font-sans font-bold uppercase tracking-widest text-foreground/60">
+            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
           </div>
 
           <p className="text-sm font-sans tracking-widest uppercase text-foreground/80">

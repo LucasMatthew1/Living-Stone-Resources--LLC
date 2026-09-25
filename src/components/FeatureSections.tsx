@@ -18,7 +18,7 @@ export function ConsultancyFeature() {
           <img
             src="/assets/business.jpg"
             alt="Professional Consultancy"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
           />
         </motion.div>
         
@@ -101,10 +101,10 @@ export function BookkeepingFeature() {
               <img
                 src="/assets/bookkeeping.jpg"
                 alt="Bookkeeping"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               />
             </div>
-            {/* Decorative stone element */}
+            {/* Decorative element */}
             <div className="absolute -bottom-6 md:-bottom-10 -right-6 md:-right-10 w-32 md:w-48 h-32 md:h-48 bg-muted border border-border z-[-1]" />
           </motion.div>
         </div>

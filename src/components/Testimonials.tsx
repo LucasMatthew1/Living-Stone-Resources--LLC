@@ -96,7 +96,7 @@ export function Testimonials() {
               {[...logos, ...logos, ...logos].map((logo, i) => (
                 <span 
                   key={i} 
-                  className="text-3xl md:text-5xl font-display font-bold text-foreground/20 uppercase tracking-[0.2em] select-none hover:text-accent transition-colors"
+                  className="text-3xl md:text-5xl font-display font-bold text-foreground/50 uppercase tracking-[0.2em] select-none hover:text-accent transition-colors"
                 >
                   {logo}
                 </span>

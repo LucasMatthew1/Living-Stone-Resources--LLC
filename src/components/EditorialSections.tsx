@@ -24,6 +24,7 @@ export function ClothingFeature() {
         const track = trackRef.current;
         if (!track) return;
         
+        // Add a buffer to prevent clipping off the left edge
         const distance = track.scrollWidth - window.innerWidth;
         gsap.to(track, {
           x: -distance,
@@ -49,16 +50,16 @@ export function ClothingFeature() {
     <section id="clothing" ref={horizontalRef} className="relative overflow-hidden bg-primary text-primary-foreground">
       <div 
         ref={trackRef} 
-        className="flex flex-col md:flex-row min-h-[100dvh] items-center px-6 md:px-[10vw] gap-12 md:gap-[10vw] w-full md:w-max py-24 md:py-0"
+        className="flex flex-col md:flex-row min-h-[100dvh] items-center px-12 md:px-[15vw] gap-12 md:gap-[15vw] w-full md:w-max py-24 md:py-0"
       >
         {/* Intro Slide */}
         <div className="flex-shrink-0 w-full md:w-[60vw] lg:w-[40vw] max-w-[calc(100vw-3rem)]">
-          <span className="text-background/80 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
+          <span className="text-primary-foreground/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
             Unique Woven Clothing
           </span>
           <h2 className="text-4xl md:text-7xl lg:text-8xl font-display font-bold mb-12 leading-[0.9]">
             Woven With <br />
-            <span className="italic font-normal serif text-background">Character.</span>
+            <span className="italic font-normal serif text-primary-foreground">Character.</span>
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/70 mb-12 leading-relaxed max-w-md">
             Discover unique woven clothing created for people who appreciate individuality, texture, craftsmanship, and style.
@@ -87,7 +88,7 @@ export function ClothingFeature() {
         </div>
 
         <div className="flex-shrink-0 w-full md:w-[60vw] md:pr-[10vw]">
-          <blockquote className="text-3xl md:text-4xl lg:text-5xl font-display italic leading-tight text-background">
+          <blockquote className="text-3xl md:text-4xl lg:text-5xl font-display italic leading-tight text-primary-foreground">
             "Clothing created for people who appreciate individuality and craftsmanship."
           </blockquote>
         </div>
