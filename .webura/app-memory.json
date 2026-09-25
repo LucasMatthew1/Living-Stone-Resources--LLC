@@ -60,7 +60,11 @@
     {
       "at": 1790360774910,
       "title": "Improved hero text readability"
+    },
+    {
+      "at": 1790364022229,
+      "title": "Added Google Map to Contact page"
     }
   ],
-  "updatedAt": 1790360774910
+  "updatedAt": 1790364022229
 }
