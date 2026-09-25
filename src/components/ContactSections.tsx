@@ -309,7 +309,7 @@ export function Footer() {
               <img 
                 src="/assets/image-removebg-preview-c8898cc857e1.png" 
                 alt="Living Stone Resources" 
-                className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-16 md:h-24 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </a>
             <p className="text-sm text-foreground/60 leading-relaxed max-w-xs">

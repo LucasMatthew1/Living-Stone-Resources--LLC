@@ -84,15 +84,15 @@ export function Testimonials() {
         {/* Logo Ticker */}
         <div className="relative py-12 border-y border-border/50">
           <div 
-            className="flex overflow-hidden group"
+            className="flex overflow-hidden group py-4"
             style={{ 
-              maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-              WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+              maskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent)'
             }}
           >
             <div 
               className={cn(
-                "flex whitespace-nowrap gap-20 items-center pl-[50px]",
+                "flex whitespace-nowrap gap-20 items-center px-12",
                 !shouldReduceMotion && "animate-marquee"
               )}
             >

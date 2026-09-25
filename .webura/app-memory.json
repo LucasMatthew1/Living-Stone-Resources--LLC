@@ -64,7 +64,11 @@
     {
       "at": 1790364022229,
       "title": "Added Google Map to Contact page"
+    },
+    {
+      "at": 1790364761554,
+      "title": "Increased header and footer logos"
     }
   ],
-  "updatedAt": 1790364022229
+  "updatedAt": 1790364761554
 }

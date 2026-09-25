@@ -38,7 +38,7 @@ export function Header({ variant = "dark" }: { variant?: "light" | "dark" }) {
             src="/assets/image-removebg-preview-c8898cc857e1.png" 
             alt="Living Stone Resources" 
             className={cn(
-              "h-10 md:h-14 w-auto object-contain transition-transform group-hover:scale-105",
+              "h-12 md:h-20 w-auto object-contain transition-transform group-hover:scale-105",
               isLight && "brightness-0 invert"
             )}
           />
