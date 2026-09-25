@@ -36,7 +36,11 @@
     {
       "at": 1790295028236,
       "title": "Updated website theme to Noir"
+    },
+    {
+      "at": 1790295818419,
+      "title": "Updated color tokens in globals.css"
     }
   ],
-  "updatedAt": 1790295028236
+  "updatedAt": 1790295818419
 }

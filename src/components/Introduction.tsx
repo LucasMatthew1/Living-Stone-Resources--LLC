@@ -28,7 +28,7 @@ const pillars = [
 
 export function Introduction() {
   return (
-    <Section id="about" className="bg-background">
+    <Section id="about" className="bg-secondary/10">
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-24">
           <motion.div
@@ -61,9 +61,9 @@ export function Introduction() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="p-8 border border-border/50 hover:border-accent/30 transition-colors group bg-muted/30"
+              className="p-8 border border-border/50 hover:border-primary/30 transition-colors group bg-secondary/30"
             >
-              <div className="text-accent mb-6 group-hover:scale-110 transition-transform duration-500">
+              <div className="text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
                 {pillar.icon}
               </div>
               <h3 className="text-xl font-display font-bold mb-4">{pillar.title}</h3>

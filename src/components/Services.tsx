@@ -45,10 +45,10 @@ const services = [
 
 export function Services() {
   return (
-    <Section id="services" className="bg-muted/30 border-y border-border/50">
+    <Section id="services" className="bg-secondary/30 border-y border-border/50">
       <Container>
         <div className="mb-16 text-center">
-          <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
             Core Offerings
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold">
@@ -64,7 +64,7 @@ export function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
-              className="group relative flex flex-col h-full bg-background border border-border overflow-hidden hover:border-accent/30 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
+              className="group relative flex flex-col h-full bg-background border border-border overflow-hidden hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1"
             >
               {/* Image Overlay on Hover */}
               <div className="relative h-64 overflow-hidden">
@@ -74,16 +74,16 @@ export function Services() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                 />
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500" />
-                <div className="absolute top-6 left-6 w-12 h-12 bg-background flex items-center justify-center text-accent shadow-lg group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                <div className="absolute top-6 left-6 w-12 h-12 bg-background flex items-center justify-center text-primary shadow-lg group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                   {service.icon}
                 </div>
               </div>
 
               <div className="p-10 flex flex-col flex-grow">
-                <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] mb-4">
+                <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] mb-4">
                   {service.title}
                 </span>
-                <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 group-hover:text-accent transition-colors">
+                <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 group-hover:text-primary transition-colors">
                   {service.subtitle}
                 </h3>
                 <p className="text-foreground mb-8 leading-relaxed">
@@ -92,7 +92,7 @@ export function Services() {
                 <div className="mt-auto">
                   <a
                     href={`#${service.id}`}
-                    className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:text-accent transition-colors group/link"
+                    className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-primary hover:opacity-70 transition-opacity group/link"
                   >
                     {service.cta}
                     <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />

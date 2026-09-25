@@ -20,7 +20,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-accent selection:text-accent-foreground scroll-smooth">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground scroll-smooth">
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
@@ -30,7 +30,7 @@ export default function About() {
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block"
+                className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block"
               >
                 Our Story
               </motion.span>
@@ -55,7 +55,7 @@ export default function About() {
         </Section>
 
         {/* Narrative Section */}
-        <Section className="bg-muted/30">
+        <Section className="bg-secondary/30">
           <Container>
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="relative aspect-[4/5] overflow-hidden bg-muted">
@@ -77,12 +77,12 @@ export default function About() {
                 </div>
                 <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
                   <div>
-                    <span className="text-3xl font-display font-bold block mb-2">10+</span>
-                    <span className="text-xs uppercase tracking-widest text-accent font-bold">Years Experience</span>
+                    <span className="text-3xl font-display font-bold block mb-2 text-primary">10+</span>
+                    <span className="text-xs uppercase tracking-widest text-primary/60 font-bold">Years Experience</span>
                   </div>
                   <div>
-                    <span className="text-3xl font-display font-bold block mb-2">500+</span>
-                    <span className="text-xs uppercase tracking-widest text-accent font-bold">Clients Built Up</span>
+                    <span className="text-3xl font-display font-bold block mb-2 text-primary">500+</span>
+                    <span className="text-xs uppercase tracking-widest text-primary/60 font-bold">Clients Built Up</span>
                   </div>
                 </div>
               </div>
@@ -94,22 +94,22 @@ export default function About() {
         <Section>
           <Container>
             <div className="grid md:grid-cols-3 gap-12">
-              <div className="space-y-6 p-8 bg-muted/50 border border-border/50">
-                <Target size={40} weight="thin" className="text-accent" />
+              <div className="space-y-6 p-8 bg-secondary/30 border border-border/50">
+                <Target size={40} weight="thin" className="text-primary" />
                 <h3 className="text-2xl font-display font-bold">Our Mission</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   To provide practical guidance and creative resources that empower individuals to build their businesses and lives on solid ground.
                 </p>
               </div>
-              <div className="space-y-6 p-8 bg-muted/50 border border-border/50">
-                <Eye size={40} weight="thin" className="text-accent" />
+              <div className="space-y-6 p-8 bg-secondary/30 border border-border/50">
+                <Eye size={40} weight="thin" className="text-primary" />
                 <h3 className="text-2xl font-display font-bold">Our Vision</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   To become the premier resource for integrated business and lifestyle solutions, where professional excellence meets creative character.
                 </p>
               </div>
-              <div className="space-y-6 p-8 bg-muted/50 border border-border/50">
-                <Users size={40} weight="thin" className="text-accent" />
+              <div className="space-y-6 p-8 bg-secondary/30 border border-border/50">
+                <Users size={40} weight="thin" className="text-primary" />
                 <h3 className="text-2xl font-display font-bold">Our Community</h3>
                 <p className="text-foreground/70 leading-relaxed">
                   We believe in building together. Our community is a space for growth, sharing, and the celebration of unique character.
@@ -123,7 +123,7 @@ export default function About() {
         <Section className="bg-primary text-primary-foreground py-32">
           <Container className="text-center">
             <h2 className="text-5xl md:text-7xl font-display font-bold mb-12">Join the Movement.</h2>
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-16 px-12 text-sm uppercase tracking-widest font-bold group" asChild>
+            <Button size="lg" className="bg-background text-foreground hover:bg-background/90 h-16 px-12 text-sm uppercase tracking-widest font-bold group" asChild>
               <a href="/contact">
                 Start Your Journey
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

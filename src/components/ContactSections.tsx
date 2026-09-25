@@ -35,10 +35,10 @@ export function ContactCTA() {
             Whether you're building a business, organizing your books, expressing your style, or exploring beauty solutions, Living Stone Resources is here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="bg-background text-foreground hover:bg-background/90 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
               <a href="/contact">Book a Session</a>
             </Button>
-            <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
+            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/5 h-14 px-10 text-sm uppercase tracking-widest font-bold" asChild>
               <a href="/contact">Get in Touch</a>
             </Button>
           </div>
@@ -76,7 +76,7 @@ export function ContactSection() {
       <Container>
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-32 items-start">
           <div>
-            <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Consultation
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">
@@ -88,29 +88,29 @@ export function ContactSection() {
             
             <div className="space-y-6 text-foreground">
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-muted flex items-center justify-center flex-shrink-0">
-                  <User weight="thin" className="w-5 h-5 text-accent" />
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0">
+                  <User weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Expert Guidance</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Expert Guidance</p>
                   <p className="font-sans text-sm">One-on-one sessions tailored to your needs.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-muted flex items-center justify-center flex-shrink-0">
-                  <Calendar weight="thin" className="w-5 h-5 text-accent" />
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0">
+                  <Calendar weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Flexible Scheduling</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Flexible Scheduling</p>
                   <p className="font-sans text-sm">Choose a time that works for your schedule.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-muted flex items-center justify-center flex-shrink-0">
-                  <CheckCircle weight="thin" className="w-5 h-5 text-accent" />
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0">
+                  <CheckCircle weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-accent mb-1">Clarity & Direction</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Clarity & Direction</p>
                   <p className="font-sans text-sm">Leave with a clear path forward.</p>
                 </div>
               </div>
@@ -123,8 +123,8 @@ export function ContactSection() {
                 Booking Step {step} of 2
               </span>
               <div className="flex gap-1">
-                <div className={cn("w-8 h-1 transition-colors", step >= 1 ? "bg-accent" : "bg-white/20")} />
-                <div className={cn("w-8 h-1 transition-colors", step >= 2 ? "bg-accent" : "bg-white/20")} />
+                <div className={cn("w-8 h-1 transition-colors", step >= 1 ? "bg-white" : "bg-white/20")} />
+                <div className={cn("w-8 h-1 transition-colors", step >= 2 ? "bg-white" : "bg-white/20")} />
               </div>
             </div>
 
@@ -135,7 +135,7 @@ export function ContactSection() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center py-12"
                 >
-                  <CheckCircle size={64} className="mx-auto text-accent mb-6" weight="thin" />
+                  <CheckCircle size={64} className="mx-auto text-primary mb-6" weight="thin" />
                   <h3 className="text-3xl font-display font-bold mb-4">Request Received</h3>
                   <p className="text-foreground mb-8">
                     Thank you, {formData.name.split(' ')[0]}. We'll review your request and confirm your session shortly.
@@ -163,7 +163,7 @@ export function ContactSection() {
                               required 
                               value={formData.name}
                               onChange={(e) => setFormData({...formData, name: e.target.value})}
-                              className="bg-background rounded-none border-border/50 focus:border-accent pl-10 h-12" 
+                              className="bg-background rounded-none border-border/50 focus:border-primary pl-10 h-12" 
                               placeholder="John Doe"
                             />
                             <User className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4" />
@@ -179,7 +179,7 @@ export function ContactSection() {
                                 required 
                                 value={formData.email}
                                 onChange={(e) => setFormData({...formData, email: e.target.value})}
-                                className="bg-background rounded-none border-border/50 focus:border-accent pl-10 h-12" 
+                                className="bg-background rounded-none border-border/50 focus:border-primary pl-10 h-12" 
                                 placeholder="john@example.com"
                               />
                               <Envelope className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4" />
@@ -192,7 +192,7 @@ export function ContactSection() {
                                 id="phone" 
                                 value={formData.phone}
                                 onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                                className="bg-background rounded-none border-border/50 focus:border-accent pl-10 h-12" 
+                                className="bg-background rounded-none border-border/50 focus:border-primary pl-10 h-12" 
                                 placeholder="(555) 000-0000"
                               />
                               <Phone className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground w-4 h-4" />
@@ -206,7 +206,7 @@ export function ContactSection() {
                               id="service" 
                               value={formData.service}
                               onChange={(e) => setFormData({...formData, service: e.target.value})}
-                              className="w-full h-12 px-4 bg-background border border-border/50 focus:border-accent outline-none text-sm rounded-none appearance-none"
+                              className="w-full h-12 px-4 bg-background border border-border/50 focus:border-primary outline-none text-sm rounded-none appearance-none"
                             >
                               <option>Business Consultancy</option>
                               <option>Bookkeeping</option>
@@ -234,7 +234,7 @@ export function ContactSection() {
                               required 
                               value={formData.date}
                               onChange={(e) => setFormData({...formData, date: e.target.value})}
-                              className="bg-background rounded-none border-border/50 focus:border-accent h-12" 
+                              className="bg-background rounded-none border-border/50 focus:border-primary h-12" 
                             />
                           </div>
                           <div className="space-y-2">
@@ -245,7 +245,7 @@ export function ContactSection() {
                               required 
                               value={formData.time}
                               onChange={(e) => setFormData({...formData, time: e.target.value})}
-                              className="bg-background rounded-none border-border/50 focus:border-accent h-12" 
+                              className="bg-background rounded-none border-border/50 focus:border-primary h-12" 
                             />
                           </div>
                         </div>
@@ -256,7 +256,7 @@ export function ContactSection() {
                             required 
                             value={formData.message}
                             onChange={(e) => setFormData({...formData, message: e.target.value})}
-                            className="bg-background rounded-none border-border/50 focus:border-accent min-h-[120px]" 
+                            className="bg-background rounded-none border-border/50 focus:border-primary min-h-[120px]" 
                             placeholder="Tell us a bit about what you're looking to build..."
                           />
                         </div>

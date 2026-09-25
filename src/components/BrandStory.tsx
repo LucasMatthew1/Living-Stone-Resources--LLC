@@ -13,12 +13,12 @@ export function BrandStory() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
+            <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-8 block">
               Our Philosophy
             </span>
             <h2 className="text-4xl md:text-6xl font-display font-bold mb-12 leading-tight">
               A Foundation Built on <br />
-              <span className="italic font-normal serif text-accent">Integrity & Craft.</span>
+              <span className="italic font-normal serif text-primary">Integrity & Craft.</span>
             </h2>
             <div className="space-y-8 text-lg md:text-xl font-sans text-foreground leading-relaxed">
               <p>

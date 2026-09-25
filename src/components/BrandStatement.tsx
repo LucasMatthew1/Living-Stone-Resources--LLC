@@ -63,20 +63,20 @@ export function BrandStatement() {
             ref={textRef}
             className="text-4xl md:text-[10rem] lg:text-[15rem] font-display font-bold leading-none tracking-tighter uppercase select-none text-primary-foreground"
           >
-            Built Up<span className="text-background/30">!</span>
+            Built Up<span className="text-secondary/30">!</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24 max-w-5xl mx-auto items-end">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
-              <span className="text-background/40 font-display italic text-2xl mb-2">Built with</span>
+              <span className="text-secondary/40 font-display italic text-2xl mb-2">Built with</span>
               <span className="font-sans font-bold uppercase tracking-widest text-sm text-primary-foreground">Purpose</span>
             </div>
             <div className="flex flex-col items-center md:pt-12">
-              <span className="text-background/40 font-display italic text-2xl mb-2">Built with</span>
+              <span className="text-secondary/40 font-display italic text-2xl mb-2">Built with</span>
               <span className="font-sans font-bold uppercase tracking-widest text-sm text-primary-foreground">Creativity</span>
             </div>
             <div className="flex flex-col items-center md:items-end text-center md:text-right">
-              <span className="text-background/40 font-display italic text-2xl mb-2">Built with</span>
+              <span className="text-secondary/40 font-display italic text-2xl mb-2">Built with</span>
               <span className="font-sans font-bold uppercase tracking-widest text-sm text-primary-foreground">Confidence</span>
             </div>
           </div>

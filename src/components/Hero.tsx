@@ -28,11 +28,11 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="inline-block text-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-4">
+            <span className="inline-block text-primary font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-4">
               Living Stone Resources, LLC
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold leading-[0.9] mb-6">
-              Built Up<span className="text-accent">!</span>
+              Built Up<span className="text-primary">!</span>
             </h1>
             <p className="text-xl md:text-2xl font-display italic text-foreground mb-8 max-w-xl">
               Business. Numbers. Style. Beauty.
@@ -41,7 +41,7 @@ export function Hero() {
               Living Stone Resources, LLC provides practical business guidance, dependable bookkeeping, unique woven clothing, and beauty consultancy—all designed to help you build with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground h-14 px-10 text-sm uppercase tracking-widest font-bold group" asChild>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground h-14 px-10 text-sm uppercase tracking-widest font-bold group" asChild>
                 <a href="/contact">
                   Start Building
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />

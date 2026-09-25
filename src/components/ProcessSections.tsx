@@ -50,7 +50,7 @@ const steps = [
 
 export function WhyUs() {
   return (
-    <Section className="bg-muted/50 border-y border-border/50">
+    <Section className="bg-secondary/30 border-y border-border/50">
       <Container>
         <div className="mb-20 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -68,12 +68,12 @@ export function WhyUs() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className="relative"
             >
-              <span className="text-accent/10 text-6xl md:text-7xl lg:text-8xl font-display font-bold absolute -top-12 left-0 md:-left-6 z-0 select-none hidden md:block">
+              <span className="text-primary/10 text-6xl md:text-7xl lg:text-8xl font-display font-bold absolute -top-12 left-0 md:-left-6 z-0 select-none hidden md:block">
                 {point.num}
               </span>
               <div className="relative z-10">
                 <h3 className="text-xl font-display font-bold mb-4">{point.title}</h3>
-                <p className="text-foreground leading-relaxed text-sm">
+                <p className="text-foreground/70 leading-relaxed text-sm">
                   {point.description}
                 </p>
               </div>
@@ -103,7 +103,7 @@ export function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="p-10 border border-border hover:border-accent transition-colors bg-background flex flex-col items-center text-center"
+              className="p-10 border border-border hover:border-primary transition-colors bg-background flex flex-col items-center text-center"
             >
               <div className="w-12 h-12 bg-primary text-primary-foreground flex items-center justify-center font-display font-bold text-xl mb-8">
                 {step.num}

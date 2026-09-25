@@ -40,10 +40,10 @@ export function Testimonials() {
   const shouldReduceMotion = useReducedMotion();
 
   return (
-    <Section id="testimonials" className="bg-muted/30 overflow-hidden">
+    <Section id="testimonials" className="bg-secondary/30 overflow-hidden">
       <Container>
         <div className="mb-20 text-center">
-          <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
             Success Stories
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold">
@@ -63,7 +63,7 @@ export function Testimonials() {
             {testimonials.map((t, i) => (
               <SwiperSlide key={i}>
                 <div className="text-center px-6 pb-12">
-                  <Quotes size={48} weight="thin" className="mx-auto text-accent/30 mb-8" />
+                  <Quotes size={48} weight="thin" className="mx-auto text-primary/30 mb-8" />
                   <p className="text-2xl md:text-3xl font-display italic leading-relaxed mb-10 text-foreground">
                     "{t.quote}"
                   </p>
@@ -83,8 +83,8 @@ export function Testimonials() {
 
         {/* Logo Ticker */}
         <div className="relative py-12 border-y border-border/50">
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-muted/30 to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-muted/30 to-transparent z-10" />
+          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-secondary/30 to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-secondary/30 to-transparent z-10" />
           
           <div className="flex overflow-hidden">
             <div 
@@ -96,7 +96,7 @@ export function Testimonials() {
               {[...logos, ...logos, ...logos].map((logo, i) => (
                 <span 
                   key={i} 
-                  className="text-3xl md:text-5xl font-display font-bold text-foreground/50 uppercase tracking-[0.2em] select-none hover:text-accent transition-colors"
+                  className="text-3xl md:text-5xl font-display font-bold text-foreground/20 uppercase tracking-[0.2em] select-none hover:text-primary transition-colors"
                 >
                   {logo}
                 </span>
@@ -115,7 +115,7 @@ export function Testimonials() {
           animation: marquee 40s linear infinite;
         }
         .testimonial-swiper .swiper-pagination-bullet {
-          background: var(--brand-accent);
+          background: var(--brand-primary);
           opacity: 0.2;
         }
         .testimonial-swiper .swiper-pagination-bullet-active {

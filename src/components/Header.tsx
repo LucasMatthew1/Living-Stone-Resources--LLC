@@ -47,12 +47,12 @@ export function Header() {
             <a
               key={link.name}
               href={link.href}
-              className="text-xs font-sans font-bold hover:text-accent transition-colors uppercase tracking-[0.2em]"
+              className="text-xs font-sans font-bold hover:text-primary transition-colors uppercase tracking-[0.2em]"
             >
               {link.name}
             </a>
           ))}
-          <Button size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground uppercase tracking-widest text-xs px-6 h-10 font-bold">
+          <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground uppercase tracking-widest text-xs px-6 h-10 font-bold">
             Consult Now
           </Button>
         </nav>
@@ -86,7 +86,7 @@ export function Header() {
                   {link.name}
                 </a>
               ))}
-              <Button className="w-full mt-4 bg-accent text-accent-foreground uppercase tracking-widest font-bold">
+              <Button className="w-full mt-4 bg-primary text-primary-foreground uppercase tracking-widest font-bold">
                 Consult Now
               </Button>
             </nav>

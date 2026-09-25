@@ -18,7 +18,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-accent selection:text-accent-foreground scroll-smooth">
+    <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary selection:text-primary-foreground scroll-smooth">
       <Header />
       <main className="pt-24">
         {/* Contact Hero */}
@@ -28,7 +28,7 @@ export default function Contact() {
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block"
+                className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block"
               >
                 Get In Touch
               </motion.span>

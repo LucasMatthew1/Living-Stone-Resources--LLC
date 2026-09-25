@@ -29,13 +29,13 @@ export function ConsultancyFeature() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Business Consultancy
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
               Build Your Business With Intention
             </h2>
-            <p className="text-lg text-foreground/90 mb-10 leading-relaxed max-w-xl">
+            <p className="text-lg text-foreground/80 mb-10 leading-relaxed max-w-xl">
               Every business has different challenges. Living Stone Resources provides practical consultancy designed to help you understand where you are, identify opportunities, and move forward with greater clarity.
             </p>
             <Button size="lg" className="bg-primary text-primary-foreground group">
@@ -51,7 +51,7 @@ export function ConsultancyFeature() {
 
 export function BookkeepingFeature() {
   return (
-    <Section id="bookkeeping" className="bg-muted/30">
+    <Section id="bookkeeping" className="bg-secondary/30">
       <Container>
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-32 items-center">
           <motion.div
@@ -60,13 +60,13 @@ export function BookkeepingFeature() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Bookkeeping
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
               Know Your Numbers. Build With Confidence.
             </h2>
-            <p className="text-lg text-foreground/90 mb-12 leading-relaxed">
+            <p className="text-lg text-foreground/80 mb-12 leading-relaxed">
               Good bookkeeping provides the organization businesses need to understand their financial activity and stay on top of their records.
             </p>
             
@@ -78,7 +78,7 @@ export function BookkeepingFeature() {
                 "Reporting"
               ].map((item, i) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-accent" />
+                  <div className="w-2 h-2 bg-primary" />
                   <span className="font-sans font-medium text-foreground/80">{item}</span>
                 </div>
               ))}
