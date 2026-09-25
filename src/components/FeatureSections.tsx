@@ -7,45 +7,45 @@ import { ArrowRight } from "@phosphor-icons/react";
 export function ConsultancyFeature() {
   return (
     <Section id="consultancy" className="p-0 overflow-hidden">
-      <div className="grid lg:grid-cols-2">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="relative h-[500px] lg:h-auto"
-        >
-          <img
-            src="/assets/business.jpg"
-            alt="Professional Consultancy"
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-          />
-        </motion.div>
+  <div className="grid lg:grid-cols-2">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 1 }}
+      className="relative h-[500px] lg:h-auto"
+    >
+      <img
+        src="/assets/business.jpg"
+        alt="Professional Consultancy"
+        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+      />
+    </motion.div>
         
-        <div className="bg-background flex items-center p-12 md:p-24 lg:p-32">
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
-            <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
-              Business Consultancy
-            </span>
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
-              Build Your Business With Intention
-            </h2>
-            <p className="text-lg text-foreground/80 mb-10 leading-relaxed max-w-xl">
-              Every business has different challenges. Living Stone Resources provides practical consultancy designed to help you understand where you are, identify opportunities, and move forward with greater clarity.
-            </p>
-            <Button size="lg" className="bg-primary text-primary-foreground group">
-              Let's Talk Business
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </motion.div>
-        </div>
-      </div>
-    </Section>
+    <div className="bg-background flex items-center p-12 md:p-24 lg:p-32">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+          Business Consultancy
+        </span>
+        <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
+          Build Your Business With Intention
+        </h2>
+        <p className="text-lg text-foreground/80 mb-10 leading-relaxed max-w-xl">
+          Every business has different challenges. Living Stone Resources provides practical consultancy designed to help you understand where you are, identify opportunities, and move forward with greater clarity.
+        </p>
+        <Button size="lg" className="bg-primary text-primary-foreground group">
+          Let's Talk Business
+          <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+        </Button>
+      </motion.div>
+    </div>
+  </div>
+</Section>
   );
 }
 
@@ -60,7 +60,7 @@ export function BookkeepingFeature() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Bookkeeping
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">
@@ -78,7 +78,7 @@ export function BookkeepingFeature() {
                 "Reporting"
               ].map((item, i) => (
                 <div key={item} className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary" />
+                  <div className="w-2 h-2 bg-brand-purple/40" />
                   <span className="font-sans font-medium text-foreground/80">{item}</span>
                 </div>
               ))}

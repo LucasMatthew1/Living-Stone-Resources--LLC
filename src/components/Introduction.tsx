@@ -61,7 +61,7 @@ export function Introduction() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="p-8 border border-border/50 hover:border-primary/30 transition-colors group bg-secondary/30"
+              className="p-8 border border-border/50 hover:border-brand-purple/30 transition-colors group bg-secondary/30 border-t-brand-purple/10"
             >
               <div className="text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
                 {pillar.icon}

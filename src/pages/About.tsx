@@ -10,6 +10,8 @@ import Lenis from "lenis";
 
 export default function About() {
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    
     const lenis = new Lenis();
     function raf(time: number) {
       lenis.raf(time);

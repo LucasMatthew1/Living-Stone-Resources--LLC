@@ -88,7 +88,7 @@ export function ContactSection() {
             
             <div className="space-y-6 text-foreground">
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
                   <User weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export function ContactSection() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
                   <Calendar weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>
@@ -106,7 +106,7 @@ export function ContactSection() {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 bg-secondary flex items-center justify-center flex-shrink-0 border-t-2 border-brand-purple/20">
                   <CheckCircle weight="thin" className="w-5 h-5 text-primary" />
                 </div>
                 <div>

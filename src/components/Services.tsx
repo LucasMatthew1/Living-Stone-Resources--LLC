@@ -48,7 +48,7 @@ export function Services() {
     <Section id="services" className="bg-secondary/30 border-y border-border/50">
       <Container>
         <div className="mb-16 text-center">
-          <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
             Core Offerings
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold">
@@ -80,7 +80,7 @@ export function Services() {
               </div>
 
               <div className="p-10 flex flex-col flex-grow">
-                <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] mb-4">
+                <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] mb-4">
                   {service.title}
                 </span>
                 <h3 className="text-2xl md:text-3xl font-display font-bold mb-6 group-hover:text-primary transition-colors">

@@ -43,7 +43,7 @@ export function Testimonials() {
     <Section id="testimonials" className="bg-secondary/30 overflow-hidden">
       <Container>
         <div className="mb-20 text-center">
-          <span className="text-primary/60 text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-primary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-4 block">
             Success Stories
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold">
@@ -63,7 +63,7 @@ export function Testimonials() {
             {testimonials.map((t, i) => (
               <SwiperSlide key={i}>
                 <div className="text-center px-6 pb-12">
-                  <Quotes size={48} weight="thin" className="mx-auto text-primary/30 mb-8" />
+                  <Quotes size={48} weight="thin" className="mx-auto text-brand-purple/20 mb-8" />
                   <p className="text-2xl md:text-3xl font-display italic leading-relaxed mb-10 text-foreground">
                     "{t.quote}"
                   </p>
@@ -86,7 +86,7 @@ export function Testimonials() {
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-secondary/30 to-transparent z-10" />
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-secondary/30 to-transparent z-10" />
           
-          <div className="flex overflow-hidden">
+          <div className="flex overflow-hidden group">
             <div 
               className={cn(
                 "flex whitespace-nowrap gap-20 items-center",
@@ -96,7 +96,7 @@ export function Testimonials() {
               {[...logos, ...logos, ...logos].map((logo, i) => (
                 <span 
                   key={i} 
-                  className="text-3xl md:text-5xl font-display font-bold text-foreground/20 uppercase tracking-[0.2em] select-none hover:text-primary transition-colors"
+                  className="text-3xl md:text-5xl font-display font-bold text-foreground/20 uppercase tracking-[0.2em] select-none hover:text-brand-purple transition-colors"
                 >
                   {logo}
                 </span>
@@ -119,6 +119,7 @@ export function Testimonials() {
           opacity: 0.2;
         }
         .testimonial-swiper .swiper-pagination-bullet-active {
+          background: var(--brand-logo-purple);
           opacity: 1;
           width: 24px;
           border-radius: 4px;

@@ -8,6 +8,8 @@ import Lenis from "lenis";
 
 export default function Contact() {
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    
     const lenis = new Lenis();
     function raf(time: number) {
       lenis.raf(time);

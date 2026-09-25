@@ -16,7 +16,7 @@
     --popover: 40 33% 98%;
     --popover-foreground: 240 10% 4%;
 
-    --primary: 120 25% 35%; /* Brand Green for buttons */
+    --primary: 120 25% 25%; /* Darkened for better contrast on cream */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 300 25% 94%; /* Slightly more purply-cream */
@@ -34,6 +34,8 @@
     --border: 300 10% 88%;
     --input: 300 10% 88%;
     --ring: 120 25% 35%;
+
+    --brand-purple: 300 25% 50%;
 
     --radius: 0px;
 
@@ -103,6 +105,11 @@
     text-rendering: optimizeLegibility;
   }
 
+  ::selection {
+    background-color: hsl(var(--brand-purple) / 0.15);
+    color: hsl(var(--brand-purple));
+  }
+
   /* Headings use the display role. Until --font-display is set to a real face
      this is the same stack as the body, i.e. no hierarchy — which is the signal
      that a type pair still needs choosing. */
@@ -118,6 +125,7 @@
 :root {
   --brand-primary: #3d5a3d;
   --brand-accent: #f5f0fa;
+  --brand-logo-purple: #a060a0;
   --brand-radius-lg: 0px;
   --brand-shadow-card: 0 10px 30px rgb(0 0 0 / 0.08);
   --brand-space-section-y: 6rem;

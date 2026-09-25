@@ -15,6 +15,8 @@ import { Newsletter } from "@/components/Newsletter";
 
 export default function Index() {
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    
     const lenis = new Lenis();
     function raf(time: number) {
       lenis.raf(time);
