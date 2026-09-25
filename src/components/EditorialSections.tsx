@@ -125,7 +125,7 @@ export function BeautyFeature() {
             transition={{ duration: 1, delay: 0.3 }}
             className="lg:w-1/2"
           >
-            <span className="text-secondary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Beauty Consultancy
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight text-foreground">

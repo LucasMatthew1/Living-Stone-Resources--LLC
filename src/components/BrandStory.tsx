@@ -18,7 +18,7 @@ export function BrandStory() {
             </span>
             <h2 className="text-4xl md:text-6xl font-display font-bold mb-12 leading-tight">
               A Foundation Built on <br />
-              <span className="italic font-normal serif text-secondary">Integrity & Craft.</span>
+              <span className="italic font-normal serif text-accent">Integrity & Craft.</span>
             </h2>
             <div className="space-y-8 text-lg md:text-xl font-sans text-foreground leading-relaxed">
               <p>

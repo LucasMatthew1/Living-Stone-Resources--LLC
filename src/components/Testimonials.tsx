@@ -82,21 +82,21 @@ export function Testimonials() {
         </div>
 
         {/* Logo Ticker */}
-        <div className="relative py-12">
+        <div className="relative py-12 border-y border-border/50">
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-muted/30 to-transparent z-10" />
           <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-muted/30 to-transparent z-10" />
           
           <div className="flex overflow-hidden">
             <div 
               className={cn(
-                "flex whitespace-nowrap gap-20 items-center px-10",
+                "flex whitespace-nowrap gap-20 items-center",
                 !shouldReduceMotion && "animate-marquee"
               )}
             >
               {[...logos, ...logos, ...logos].map((logo, i) => (
                 <span 
                   key={i} 
-                  className="text-3xl md:text-5xl font-display font-bold text-foreground/60 uppercase tracking-[0.2em] select-none hover:text-accent transition-colors"
+                  className="text-3xl md:text-5xl font-display font-bold text-foreground/20 uppercase tracking-[0.2em] select-none hover:text-accent transition-colors"
                 >
                   {logo}
                 </span>
@@ -109,10 +109,10 @@ export function Testimonials() {
       <style jsx global>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-33.333%); }
         }
         .animate-marquee {
-          animation: marquee 30s linear infinite;
+          animation: marquee 40s linear infinite;
         }
         .testimonial-swiper .swiper-pagination-bullet {
           background: var(--brand-accent);

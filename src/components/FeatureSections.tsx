@@ -60,7 +60,7 @@ export function BookkeepingFeature() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <span className="text-secondary text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
+            <span className="text-accent text-xs font-sans font-bold tracking-[0.2em] uppercase mb-6 block">
               Bookkeeping
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight">

@@ -297,7 +297,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-12">
           <a href="/" className="flex items-center group">
             <img 
-              src="/assets/logo-clean.png" 
+              src="/assets/image-removebg-preview-c8898cc857e1.png" 
               alt="Living Stone Resources" 
               className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
             />

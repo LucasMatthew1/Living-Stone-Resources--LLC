@@ -7,33 +7,33 @@
     /* Neutral starting palette — intentionally uncommitted. Retune every token
        here to suit the brief (warm, cool, dark, high-contrast, playful...) rather
        than hardcoding hex values in components. */
-    --background: 40 33% 98%; /* #FAF9F6 */
-    --foreground: 0 0% 18%; /* #2D2D2D */
+    --background: 120 10% 98%; /* Very faint greenish tint */
+    --foreground: 120 10% 10%; /* Very dark green/black */
 
-    --card: 40 33% 98%;
-    --card-foreground: 0 0% 18%;
+    --card: 120 10% 98%;
+    --card-foreground: 120 10% 10%;
 
-    --popover: 40 33% 98%;
-    --popover-foreground: 0 0% 18%;
+    --popover: 120 10% 98%;
+    --popover-foreground: 120 10% 10%;
 
-    --primary: 0 0% 18%;
-    --primary-foreground: 40 33% 98%;
+    --primary: 120 10% 10%;
+    --primary-foreground: 120 10% 98%;
 
-    --secondary: 40 30% 25%; /* Even darker for safe contrast */
-    --secondary-foreground: 40 33% 98%;
+    --secondary: 120 25% 30%;
+    --secondary-foreground: 120 10% 98%;
 
-    --muted: 40 10% 94%;
-    --muted-foreground: 0 0% 30%;
+    --muted: 120 10% 94%;
+    --muted-foreground: 120 10% 40%;
 
-    --accent: 40 30% 25%;
-    --accent-foreground: 40 33% 98%;
+    --accent: 120 25% 40%; /* Darker green for contrast */
+    --accent-foreground: 120 10% 98%;
 
     --destructive: 0 72% 48%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 40 15% 85%;
-    --input: 40 15% 85%;
-    --ring: 40 26% 43%;
+    --border: 120 10% 85%;
+    --input: 120 10% 85%;
+    --ring: 120 25% 40%;
 
     --radius: 0px;
 
@@ -116,11 +116,11 @@
 
 /* webura:design-tokens start — managed by design_token_apply; edit the values, keep the markers */
 :root {
-  --brand-primary: #2D2D2D;
-  --brand-accent: #8C7851;
+  --brand-primary: #1a1a1a;
+  --brand-accent: #60a060;
   --brand-radius-lg: 0px;
   --brand-shadow-card: 0 10px 30px rgb(0 0 0 / 0.08);
-  --brand-space-section-y: 6rem;
+  --brand-space-section-y: 4rem;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -36,8 +36,8 @@ export function BrandStatement() {
           ease: "power3.out",
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 80%",
-            end: "top 20%",
+            start: "top 95%",
+            end: "bottom 20%",
             scrub: 1,
           },
         }
